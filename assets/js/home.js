@@ -24,6 +24,12 @@ document.getElementById("butaoPopulares").addEventListener("click", () => {
     window.location = "assets/pag/populares.html"
 });
 
+/* Função para levar a área do contato dos dev */
+
+document.getElementById("areaDev").addEventListener("click", () => {
+    window.location = "assets/pag/desenvolvedores.html"
+});
+
 /* Função para ocultar o map */
 
 
