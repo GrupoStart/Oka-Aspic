@@ -4,10 +4,9 @@ Oka Aspic é um restaurante fundado em 2015, pelo chefe Oliver Rueda que alçou 
 ![Tela home](assets/img/readme/home.jpg)  
 ## Tela Home
 ![Tela pratos populares](assets/img/readme/populares.jpg)  
-## Tela pratos populares
+## Tela Pratos Populares
 ![Tela login](assets/img/readme/login.jpg)  
-## Tela login
-
+## Tela Login
 
 
 
