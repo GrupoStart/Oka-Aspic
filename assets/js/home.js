@@ -16,12 +16,12 @@ document.getElementById("btnlocalizacao").addEventListener("click", () => {
 
 /* Função do botão que leva a pagina de melhores pratos */
 
-document.getElementById("btnFaleConosco").addEventListener("click", () => {
-    window.location = "assets/pages/contatos.html"
+document.getElementById("btnReserva").addEventListener("click", () => {
+    window.location = "assets/pag/reserva.html"
 });
 
 document.getElementById("butaoPopulares").addEventListener("click", () => {
-    window.location = "assets/pages/populares.html"
+    window.location = "assets/pag/populares.html"
 });
 
 /* Função para ocultar o map */

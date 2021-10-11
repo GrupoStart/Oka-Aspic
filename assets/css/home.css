@@ -77,9 +77,9 @@ header {
 #navegacao.ativo{
     display: flex;
     flex-direction: column;
-    height: calc(50vh - 70px);
+    height: calc(45vh - 70px);
     visibility: visible;
-    padding-top: 8%;
+    padding-top: 4%;
 }
 
 /* Área da chegada */
@@ -304,6 +304,7 @@ header {
 #caixaInformacao {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 30px;
     margin-right: 10px;
 }
@@ -332,6 +333,7 @@ header {
 }
 #btnsLocalizacao button {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 8px;
     font-size: 1.4em;
@@ -343,6 +345,9 @@ header {
 }
 #btnsLocalizacao button:hover {
     transform: scale(1.2);
+}
+#btnReserva {
+    width: 172.8px;
 }
 #btnOcultar {
     display: none !important;
@@ -417,6 +422,9 @@ header {
     #areaChegada {
         margin: 0;
     }
+    .nomeRestaurante{
+        color: var(--amareloMostarda);
+    }
     #responMenu {
         display: flex;
     }
@@ -426,9 +434,9 @@ header {
         top: 70px;
         right: 0;
         width: 100%;
+        height: 0;
         z-index: 10;
         transition: .6s;
-        height: 0;
         visibility: hidden;
         overflow-y: hidden;
         background-color: #14161D;
@@ -439,7 +447,7 @@ header {
     }
     #navegacao li a {
         color: var(--amareloMostarda);
-        font-size: 2em;
+        font-size: 1.8em;
         
     }
     #nomeLista {
@@ -495,5 +503,64 @@ header {
     }
     #map {
         width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .nomeRestaurante {
+        font-size: 2.5em;
+    }
+    #navegacao li a {
+        font-size: 1.5em;
+    }
+    #navegacao.ativo {
+        height: calc(40vh - 70px);
+        padding-top: 2%;
+    } 
+    /* Butons Chegada */
+    #areaButons button {
+        padding: 8px;
+    }
+    #containerSobre {
+        padding: 0;
+    }
+    .caixaImg {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 320px){
+    #navegacao {
+        top: 50px;
+    }
+    #navegacao.ativo {
+        height: calc(40vh - 50px);
+        padding-top: 15%;
+    } 
+    #textChegada {
+        width: 100%;
+        margin: 0;
+    }
+    #textChegada h2 {
+        margin-top: 5px;
+    }
+    #areaButons, #btnsLocalizacao  {
+        flex-direction: column;
+    }
+    #areaButons button, #btnsLocalizacao button {
+        margin: 10px;
+    }
+    /* Prato famoso */
+    #pratoFamoso {
+        padding: 8px;
+    }
+    #areaTextFamoso h1 {
+        font-size: 3em;
+    }
+    #areaTextFamoso h5 {
+        font-size: 1em;
+    }
+    #localizacao h1 {
+        font-size: 2.8em;
     }
 }
