@@ -4,3 +4,7 @@ botao.addEventListener("click", () => {
     let ulItens = document.getElementById("navegacao").classList.toggle("ativo")
     ulItens ? trocaImg.src = "../img/home/iconsHome/close.svg" : trocaImg.src = "../img/home/iconsHome/menu.svg" 
 });
+
+document.getElementById("areaDev").addEventListener("click", () => {
+    window.location = "assets/pag/desenvolvedores.html"
+});
