@@ -6,5 +6,5 @@ botao.addEventListener("click", () => {
 });
 
 document.getElementById("areaDev").addEventListener("click", () => {
-    window.location = "assets/pag/desenvolvedores.html"
+    window.location = "../pag/desenvolvedores.html"
 });

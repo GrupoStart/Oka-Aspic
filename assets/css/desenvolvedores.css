@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+body {
+    background-color: #14161D;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+#container > h1 {
+    font-size: 2em;
+    color: #FFF;
+    margin: 30px;
+}
+.caixaDev {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.nomeImg {
+    display: flex;
+    align-items: center;
+    width: 510px;
+}
+.nomeImg h1 {
+    color: rgb(0, 255, 128);
+    font-size: 2em;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.imgDev {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.caixaDev h3 {
+    color: var(--amareloMostarda);
+    font-weight: 500;
+}
+
+button {
+    padding: 8px;
+    margin: 10px auto;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: 1s;
+    color: #FFF;
+    border: 2px solid rgb(0, 255, 128);
+    background-color: rgba(0, 0, 0, 0);
+}
+button:hover {
+    transform: scale(1.2);
+} 
+@media (max-width: 425px) {
+    .nomeImg {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
