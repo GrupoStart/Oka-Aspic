@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="assets/js/script.js" defer></script>
         <link rel="stylesheet" href="assets/css/home.css">
+        <script src="assets/js/home.js" defer></script>
         <title>Restaurante - Frances</title>
     </head>
     <body>
@@ -14,31 +14,26 @@
                 <nav id="navMenu">
                     <div id="responMenu">
                         <h1 class="nomeRestaurante">Oka Aspic</h1>
-                        <button id="menuBurg" class="ativo">
-                            <img src="assets/img/icons/menu.svg" alt="" id="troca">
+                        <button id="menuBurg" >
+                            <img src="assets/img/home/iconsHome/menu.svg" alt="" id="trocaImgs">
                         </button>
         
                     </div>
-                    <ul>
+                    <ul id="navegacao">
                         <li>
-                            <a href="assets/pages/cardapio.html" class="peso2">Cardapio</a>
+                            <a href="assets/pag/cardapio.html" class="peso2 links">Cardapio</a>
                         </li>
                         <li>
-                            <a href="assets/pages/reserva.html" class="peso1">Reserva</a>
+                            <a href="assets/pag/reserva.html" class="peso1 links">Reserva</a>
+                        </li>
+                        <li id="nomeLista">
+                            <a href="#" class="nomeRestaurante links" >Oka Aspic</a>
                         </li>
                         <li>
-                            <a href="#" class="nomeRestaurante">Oka Aspic</a>
+                            <a href="assets/pag/contatos.html" class="peso1 links">Contatos</a>
                         </li>
                         <li>
-                            <a href="assets/pages/contatos.html" class="peso1">Contatos</a>
-                        </li>
-                        <li>
-                            <a href="assets/pages/login.html" class="peso2"> 
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="userIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                </span> 
-                                Login 
-                            </a>
+                            <a href="assets/pag/login.html" class="peso2"> Login </a>
                         </li>
                     </ul>
                 </nav>
@@ -47,7 +42,8 @@
             <div id="areaChegada">
                 <div id="textChegada">
                     <h1>
-                        Bonjour monsieur, bienvenue à Oka Aspic
+                        Bonjour monsieur, bienvenue à
+                        Oka Aspic
                     </h1>
                     <h2>
                         Más que un restaurante, uns experiencia humana y sensorial !
@@ -70,12 +66,13 @@
                     style="width:64px;height:64px">
                 </lord-icon>
             </div>
+
         </section>
 
         <main id="sobre">
             <h1>Restaurante</h1>
             <div id="containerSobre">
-                <img src="assets/img/chefe_cozinha_img.jpg" id="imgChefe" alt="imgm do proprietario e chefe de cozinha do restaurante" title="Chefe de cozinha.">
+                <img src="assets/img/home/chefe_cozinha_img.jpg" id="imgChefe" alt="imgm do proprietario e chefe de cozinha do restaurante" title="Chefe de cozinha.">
                 <div id="areaTextSobre">
 
                     <p>
@@ -92,23 +89,23 @@
             </div>
 
             <section id="imgRestaurante">
-                <div class="caixaImagens">
-                    <img src="assets/img/area_bar_img.jpg" alt="Área do bar do restaurante">
+                <div class="caixaImg">
+                    <img src="assets/img/home/area_bar_img.jpg" alt="Área do bar do restaurante">
                 </div>
-                <div class="caixaimgns">
-                    <img src="assets/img/mesa_img.jpg" alt="Mesas do restaurante">
+                <div class="caixaImg">
+                    <img src="assets/img/home/mesa_img.jpg" alt="Mesas do restaurante">
                 </div>
-                <div class="caixaimgns">
-                    <img src="assets/img/prato_img.jpg" alt="Prato principal do restaurante">
+                <div class="caixaImg">
+                    <img src="assets/img/home/prato_img.jpg" alt="Prato principal do restaurante">
                 </div>
-                <div class="caixaimgns">
-                    <img src="assets/img/cozinha_img.jpg" alt="Área da cozinha do restaurante">
+                <div class="caixaImg">
+                    <img src="assets/img/home/cozinha_img.jpg" alt="Área da cozinha do restaurante">
                 </div>
-                <div class="caixaimgns">
-                    <img src="assets/img/barmen_img.jpg" alt="Área do bar">
+                <div class="caixaImg">
+                    <img src="assets/img/home/barmen_img.jpg" alt="Área do bar">
                 </div>
-                <div class="caixaimgns">
-                    <img src="assets/img/chefe_cozinhando_img.jpg" alt="Chefe e auxiliar preparando a comida">
+                <div class="caixaImg">
+                    <img src="assets/img/home/chefe_cozinhando_img.jpg" alt="Chefe e auxiliar preparando a comida">
                 </div>
             </section>
 
@@ -144,19 +141,19 @@
                     </ul>
                     <div id="areaBtn">
 
-                        <a href="assets/pages/populares.html" target="_self" >
+                        <a href="assets/pag/populares.html" target="_self" >
                             <button type="button" id="butaoPopulares">Pratos Populares !</button>
                         </a>
                     </div>
                 </div>
-                <img src="assets/img/steak_tartar_img.jpg" id="imgPrato" alt="Steak Tartare" >
+                <img src="assets/img/home/steak_tartar_img.jpg" id="imgPrato" alt="Steak Tartare" >
             </section>
 
             <section id="localizacao">
                 <h1>
                     Nossa localização 
                     <span>
-                        <img src="assets/img/icons/localizacao.svg" alt="ícone de localização">
+                        <img src="assets/img/home/iconsHome/localizacao.svg" alt="ícone de localização">
                     </span>
                 </h1>
 
@@ -197,9 +194,9 @@
                         <div id="btnsLocalizacao">
                             <button type="button" id="btnFaleConosco">Fale Conosco</button>
                             <button type="button" id="btnOcultar">
-                                Ocultar Map   
+                                Mostrar Map   
                                 <span id="iconMap">
-                                    <img src="assets/img/icons/map.svg" alt="Ícone de mini mapa">
+                                    <img src="assets/img/home/iconsHome/map.svg" alt="Ícone de mini mapa">
                                 </span>
                             </button>
                         </div>
