@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Source Serif Pro', serif;
+}
+
+:root{
+    --amareloMostarda: #B58921;
+}
+body {
+    background-color: #40392D;
+}
+/* Área header */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 70px;
+}
+#navegacao {
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+}
+#navMenu ul li {
+    padding: 10px 0;
+    margin: 0 10px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+#navegacao li a {
+    padding: 10px 5px;
+    color: #FFF;
+    transition: 1s;
+}
+#navegacao li a:hover {
+    color: var(--amareloMostarda) !important;
+}
+.nomeRestaurante {
+    font-weight: 500;
+    font-size: 3em;
+    color: #FFF;
+}
+.peso1 {
+    padding-top: 50px;
+    font-size: 2em;
+}
+.peso2 {
+    font-size: 1.5em;
+}
+#responMenu {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#menuBurg {
+    border: none;
+    cursor: pointer;
+    background-color: #00000000;
+}
+#menuBurg:focus{
+    border: none;
+    background-color: #00000000;
+}
+
+#navegacao.ativo{
+    display: flex;
+    flex-direction: column;
+    height: calc(50vh - 70px);
+    visibility: visible;
+    padding-top: 4%;
+}
+/* Pratos Populares */
+
+#controlePratos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 30px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+}
+.caixaPrato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.caixaPrato h2 {
+    color: var(--amareloMostarda);
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+.caixaPrato img {
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+    transition: 1s;
+}
+.caixaPrato img:hover {
+    transform: scale(1.1);
+}
+.caixaPrato p {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.preco {
+    color: var(--amareloMostarda);
+}
+/* Área footer */
+footer {
+    text-align: center;
+    background-color: #262626;
+    padding: 10px;
+}
+footer h1 {
+    margin-bottom: 20px;
+}
+footer button {
+    padding: 8px;
+    margin: 10px auto;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: 1s;
+    color: #FFF;
+    border: 2px solid var(--amareloMostarda);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#controleFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#controleFooter h2 {
+    font-size: 2em;
+    color: #F2F2F2;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#footerRestaurante {
+    text-align: left;
+}
+#footerRestaurante ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+#footerRestaurante li {
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: 10px;
+}
+#footerRestaurante li a {
+    color: var(--amareloMostarda);
+}
+#areaDev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#caixaImgDev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+.caixaDev {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.caixaDev img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.caixaDev h3 {
+    color: var(--amareloMostarda);
+    font-weight: 500;
+}
+#copy {
+    color: #F2F2F2;
+    font-weight: 500;
+}
+
+@media(max-width: 768px) {
+    /* Área header */
+    header {
+        background-color: #14161D;
+    }
+    #areaChegada {
+        margin: 0;
+    }
+    .nomeRestaurante{
+        color: var(--amareloMostarda);
+    }
+    #responMenu {
+        display: flex;
+    }
+    #navegacao {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        z-index: 10;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        background-color: #14161D;
+    }
+    #navegacao li {
+        width: 90%;
+        border-bottom: 1px solid #FFF;
+    }
+    #navegacao li a {
+        color: var(--amareloMostarda);
+        font-size: 1.8em;
+        
+    }
+    /* Pratos */
+    #controlePratos {
+        width: 100%;
+        margin: 0;
+    }
+    .caixaPrato {
+        width: 300px;
+    }
+    .caixaPrato img {
+        width: 300px;
+        height: 300px;
+    }
+    /* Footer */
+    #caixaImgDev {
+        width: 80%;
+    }
+    #footerRestaurante {
+        text-align: center;
+    }
+    #footerRestaurante ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
