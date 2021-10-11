@@ -1,7 +1,8 @@
 var botao = document.getElementById("menuBurg")
-var troca = document.getElementById("troca")
 botao.addEventListener("click", () => {
-    botao.classList.toggle("ativo") ? troca.src = "assets/image/icons/x.svg" : troca.src = "assets/image/icons/menu.svg" 
+    let trocaImg = document.getElementById("trocaImgs")
+    let ulItens = document.getElementById("navegacao").classList.toggle("ativo")
+    ulItens ? trocaImg.src = "assets/img/home/iconsHome/close.svg" : trocaImg.src = "assets/img/home/iconsHome/menu.svg" 
 })
 
 /* Funções dos dois botões da área de chegada */
@@ -25,14 +26,15 @@ document.getElementById("butaoPopulares").addEventListener("click", () => {
 
 /* Função para ocultar o map */
 
+
 document.getElementById("btnOcultar").addEventListener("click", () => {
-    var maps = document.getElementById("areamaps")
-    var resposta = maps.classList.toggle("ativador")
+    let maps = document.getElementById("areamaps")
+    let resposta = maps.classList.toggle("ativador")
     if (resposta == true) {
-        maps.style.display = "none"  
-        document.getElementById("btnOcultar").innerHTML = "Mostrar Map <span id='iconMap'> <img src='assets/image/icons/map.svg'> </span>"
+        maps.style.display = "block"  
+        document.getElementById("btnOcultar").innerHTML = "Ocultar Map <span id='iconMap'> <img src='assets/img/home/iconsHome/map.svg'> </span>"
     } else {
-        maps.style.display = "block"
-        document.getElementById("btnOcultar").innerHTML = "Ocultar Map <span id='iconMap'> <img src='assets/image/icons/map.svg'> </span>"
+        maps.style.display = "none"
+        document.getElementById("btnOcultar").innerHTML = "Mostar Map <span id='iconMap'> <img src='assets/img/home/iconsHome/map.svg'> </span>"
     }
 })
