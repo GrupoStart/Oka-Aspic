@@ -104,7 +104,7 @@ header {
 .caixaPrato img {
     width: 400px;
     height: 400px;
-    margin: 10px auto;
+    margin: 15px auto;
     border-radius: 10px;
     transition: 1s;
 }
