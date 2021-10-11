@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("../img/reserva/background-reservas.jpg");
+    background-image: url(../img/reservas/background-reservas.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
