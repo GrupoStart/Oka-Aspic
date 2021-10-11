@@ -36,23 +36,30 @@
                     <input class="inputs" type="password" name="pass" placeholder="Senha" required>
                     <input id="botao" type="submit" value="Login">
                 </div>
+                </form>
 
 
                 <div id="recsenha">
 
-                    <p>Esqueceu a senha? <span>clique aqui!</span>
+                    <p>Esqueceu a senha? <span id="contato">Clique aqui!</span>
 
                     </p>
                 </div>
             </div>
 
-            </form>
+
 
         </div>
 
 
 
     </div>
+
+    <script>
+        document.getElementById("contato").addEventListener("click", () => {
+            alert("Entre em contato com o restaurante e informe o problema!")
+        })
+    </script>
 
 </body>
 

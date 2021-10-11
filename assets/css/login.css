@@ -47,7 +47,7 @@
         }
         
         #botao:hover {
-            background-color: blue;
+            background-color: rgb(248, 111, 20);
         }
         
         #recsenha {
@@ -91,4 +91,9 @@
             body {
                 height: 147vh;
             }
+        }
+        
+        #contato {
+            cursor: pointer;
+            color: blue;
         }
