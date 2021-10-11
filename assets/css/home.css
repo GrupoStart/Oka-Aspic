@@ -16,17 +16,6 @@
 html {
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-    width: 6px;
-}
-::-webkit-scrollbar-track {
-    background-color: #000000;
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #A5AAA3;
-    border-radius: 5px;
-}
 
 /* Inicio do Header */
 
@@ -35,6 +24,7 @@ header {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
+    height: 70px;
 }
 #navegacao {
     display: flex;
@@ -47,17 +37,17 @@ header {
     font-family: 'Source Serif Pro', serif;
 }
 
-#navMenu li a {
+#navegacao li a {
     padding: 10px 5px;
     color: #FFF;
     transition: 1s;
 }
-#navMenu li a:hover {
+#navegacao li a:hover {
     color: var(--amareloMostarda) !important;
 }
 .nomeRestaurante {
     font-weight: 500;
-    font-size: 3.5em;
+    font-size: 3em;
     color: #FFF;
 }
 .peso1 {
@@ -72,9 +62,8 @@ header {
     display: none;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
-
 #menuBurg {
     border: none;
     cursor: pointer;
@@ -88,9 +77,9 @@ header {
 #navegacao.ativo{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: calc(100vh - 70px);
+    height: calc(50vh - 70px);
     visibility: visible;
+    padding-top: 8%;
 }
 
 /* Área da chegada */
@@ -152,7 +141,7 @@ header {
     color: #FFF;
     background-color: rgba(255, 255, 255, 0);
 }
-#areaButons button:hover {
+.butonsChegada:hover {
     transform: scale(1.2);
     border-color: #f0e7df;
     font-weight: 500;
@@ -326,16 +315,20 @@ header {
     margin-bottom: 10px;
     color: #FFF;
 }
+.info a {
+    color: var(--amareloMostarda);
+}
 .info a:visited {
-    color: #B58921;
+    color: var(--amareloMostarda);
 }
 .info li::marker {
     color: #FFF;
 }
 #btnsLocalizacao {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 #btnsLocalizacao button {
     display: flex;
@@ -343,12 +336,13 @@ header {
     padding: 8px;
     font-size: 1.4em;
     cursor: pointer;
+    transition: 1s;
     color: #FFF;
     border: 2px solid var(--amareloMostarda);
     background-color: rgba(0, 0, 0, 0);
 }
 #btnsLocalizacao button:hover {
-    color: #FFF;
+    transform: scale(1.2);
 }
 #btnOcultar {
     display: none !important;
@@ -406,8 +400,12 @@ header {
     #caixaInformacao {
         gap: 20px
     }
+    #btnsLocalizacao {
+        justify-content: left;
+        margin: 20px 0 0 15px;
+    }
     #map {
-        width: 35vw;
+        width: 40vw;
     }
 
 }
@@ -427,17 +425,22 @@ header {
         position: absolute;
         top: 70px;
         right: 0;
-        width: 35%;
-        margin: auto;
+        width: 100%;
         z-index: 10;
         transition: .6s;
         height: 0;
         visibility: hidden;
         overflow-y: hidden;
-        background-color: #FFF;
+        background-color: #14161D;
+    }
+    #navegacao li {
+        width: 90%;
+        border-bottom: 1px solid #FFF;
     }
     #navegacao li a {
         color: var(--amareloMostarda);
+        font-size: 2em;
+        
     }
     #nomeLista {
         display: none;
@@ -469,13 +472,28 @@ header {
     }
 
     /* Área localizacação */
+    #controleLocalizacao {
+        flex-direction: column;
+    }
+    #localizacao  h1 {
+        font-size: 3.5em;
+    }
     #areaInformacao {
         margin: auto;
+    }
+    #btnsLocalizacao {
+        justify-content: space-around;
+        margin: 30px 0 0 0;
     }
     #btnOcultar {
         display: flex !important;
     }
     #areamaps {
         display: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #map {
+        width: 100%;
     }
 }
