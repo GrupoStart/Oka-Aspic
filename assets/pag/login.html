@@ -1,80 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="assets/js/script.js" defer></script>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Restaurante - Frances</title>
-    </head>
-    <body>
-        <section id="chegada">
-            <header>
-                <nav id="navMenu">
-                    <div id="responMenu">
-                        <h1 class="nomeRestaurante">Oka Aspic</h1>
-                        <button id="menuBurg" class="ativo">
-                            <img src="assets/image/icons/menu.svg" alt="" id="troca">
-                        </button>
-        
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="assets/pages/cardapio.html" class="peso2">Cardapio</a>
-                        </li>
-                        <li>
-                            <a href="assets/pages/reserva.html" class="peso1">Reserva</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nomeRestaurante">Oka Aspic</a>
-                        </li>
-                        <li>
-                            <a href="assets/pages/contatos.html" class="peso1">Contatos</a>
-                        </li>
-                        <li>
-                            <a href="assets/pages/login.html" class="peso2"> 
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="userIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                </span> 
-                                Login 
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+<html lang="en">
 
-            <div id="areaChegada">
-                <div id="textChegada">
-                    <h1>
-                        Bonjour monsieur, bienvenue à Oka Aspic
-                    </h1>
-                    <h2>
-                        Más que un restaurante, uns experiencia humana y sensorial !
-                    </h2>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+
+
+
+    <div id="pagina">
+
+        <div id="slogan">
+            <h2>A melhor culinária da região você encontra aqui!</h2>
+
+        </div>
+
+
+
+        <div id="conteudo">
+            <form method="POST" action="#"></form>
+            <div id="formulario">
+                <h1 id="titulo">Faça Login</h1>
+                <div id="telaLogin">
+                    <input class="inputs" type="email" name="email" placeholder="E-mail" required>
+                    <input class="inputs" type="password" name="pass" placeholder="Senha" required>
+                    <input id="botao" type="submit" value="Login">
                 </div>
 
-                <div id="areaButons">
-                    <button id="btnconhecaNos">Conheça-nos</button>
-                    <button id="btnlocalizacao">Nossa localização</button>
+
+                <div id="recsenha">
+
+                    <p>Esqueceu a senha? <span>clique aqui!</span>
+
+                    </p>
                 </div>
             </div>
 
-            <div id="animationMouse">
-                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/xwjtkymn.json"
-                    trigger="loop"
-                    colors="primary:#ffffff,secondary:#000"
-                    stroke="70"
-                    style="width:64px;height:64px">
-                </lord-icon>
-            </div>
-        </section>
+            </form>
 
-        
-            
-        
-        
-    </body>
+        </div>
+
+
+
+    </div>
+
+</body>
+
 </html>

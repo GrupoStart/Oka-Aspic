@@ -1,0 +1,94 @@
+        #conteudo {
+            width: 300px;
+            height: 350px;
+            background-color: rgba(189, 182, 182, 0.453);
+            border-radius: 8%;
+            ;
+        }
+        
+        #formulario {
+            margin-top: 40px;
+        }
+        
+        body {
+            font-family: 'Source Serif Pro', serif;
+            height: 97.5vh;
+            background: url("../img/login/background_login.png") center no-repeat;
+            background-size: cover;
+        }
+        
+        .inputs {
+            margin-top: 5px;
+            margin-left: 20%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            margin-bottom: 8%;
+        }
+        
+        #titulo {
+            text-align: center;
+            color: #fff;
+        }
+        
+        #botao {
+            margin-left: 20%;
+            padding: 11px;
+            width: 60%;
+            border-radius: 8px;
+            background-color: rgb(255 126 40);
+            border: none;
+            margin-bottom: 40px;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        #botao:hover {
+            background-color: blue;
+        }
+        
+        #recsenha {
+            text-align: center;
+            color: #fff;
+            margin-top: -40px;
+            font-weight: bold;
+        }
+        
+        #pagina {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        #slogan {
+            max-width: 460px;
+            font-family: 'Anton', sans-serif;
+            font-size: 47px;
+            color: #fff;
+        }
+        
+        @media (max-width:992px) {
+            #slogan {
+                max-width: 450px;
+                left: 7%;
+                font-size: 44px;
+                top: 7%;
+            }
+        }
+        
+        @media(max-width:754px) {
+            #pagina {
+                justify-content: space-evenly;
+                flex-direction: column;
+            }
+            #slogan {
+                text-align: center;
+                max-width: 400px;
+            }
+            body {
+                height: 147vh;
+            }
+        }
