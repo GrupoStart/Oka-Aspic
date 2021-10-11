@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css2?family=Ephesis&display=swap%27);
+
+body{
+    background-image: url(img/background-cardapio.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#menu ul {
+    padding:8px;
+    border-radius: 16px;
+    margin-top: 2%;
+    padding-left: 2%;
+    font-family: 'Ephesis';
+    font-weight: bold;
+    margin-left: 23%;    
+}
+img{
+    width: 40%;
+    right: 2%;
+    border-radius: 80%;
+    border-bottom: 4px solid rgb(234, 0, 0);;
+}
+.lateral{
+    font-size: 16px;
+}
+.centralizando{
+    font-size: 25px;
+}
+.centro{
+    font-size: 40px;
+}
+#menu ul li { 
+    display: inline; 
+}
+#menu ul li a {
+    padding: 1.2% 3.6%;
+    display: inline;
+    color: #333;
+    text-decoration: none;
+    color: whitesmoke;
+}
+h1{
+    text-align: center;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    color: whitesmoke;
+    margin-top: 6%;
+    font-style: italic;
+    font-size: 34px;
+    background-color: rgba(234, 0, 0, 0.4);
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 8px;
+    font-family: 'Ephesis';
+}
+.cardapio{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    border-bottom: whitesmoke solid 1px;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+#margem{
+    margin-bottom: 8%;
+}
+th{
+    font-size: 25px;
+    font-style: italic;
+}
+/*hover*/
+#menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(234, 0, 0, 0.6);
+    border-bottom:5px solid rgb(234, 0, 0);
+    border-radius: 80px;
+}
+h1:hover{
+    background: none;
+    color: rgb(234, 0, 0);
+}
+th:hover{
+    font-size: 30px;
+    color: rgb(223, 76, 76);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+img:hover{
+    width: 50%;
+    border-radius: 10%;
+    border: 2px solid rgb(234, 0, 0);
+}
+
+/*responsividade*/
+
+@media(max-width: 1020px) {
+    #menu ul {
+        padding-left: 15%;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 0;
+        background-color: rgba(177, 177, 177, 0.3);
+    }
+    .lateral{
+        font-size: 16px;
+    }
+    .centralizando{
+        font-size: 20px;
+    }
+    .centro{
+        font-size: 24px;
+    }
+    body td {
+        font-size: 10px;
+        width: 100%;
+    }
+    body th{
+        font-size: 20px;
+    }
+    img{
+        opacity: 0;
+    }
+    h1{
+        background: none;
+        color: rgb(234, 0, 0);
+        
+    }
+    th:hover{
+        font-size: 20px;
+        color: whitesmoke;
+        background-color: rgba(234, 0, 0, 0.6) ;
+    }
+}
+@media (max-width: 860px) {
+    #menu ul{
+        padding-left: 8% ;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 0;
+        background-color: rgba(177, 177, 177, 0.3);
+    }
+}
+@media(max-width: 700px){
+    #menu ul {
+        padding-left: 10%;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 0;
+        
+    }
+    .lateral{
+        font-size: 10px;
+    }
+    .centralizando{
+        font-size: 12px;
+    }
+    .centro{
+        font-size: 16px;
+    }
+    body td {
+        font-size: 10px;
+        width: 100%;
+    }
+    body th{
+        font-size: 16px;
+    }
+    img{
+        opacity: 0;
+    }
+
+}
+@media(max-width: 640px) {
+    #menu ul {
+        padding-left: 6%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        background-color: rgba(177, 177, 177, 0.3);
+    }
+    .lateral{
+        font-size: 8px;
+    }
+    .centralizando{
+        font-size: 10px;
+    }
+    .centro{
+        font-size: 14px;
+    }
+    body td {
+        font-size: 8px;
+        width: 100%;
+    }
+    body th{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    img{
+        opacity: 0;
+    }
+}
+    @media(max-width: 400px) {
+        #menu ul {
+            padding-left: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            background-color: rgba(177, 177, 177, 0.3);
+        }
+    }
