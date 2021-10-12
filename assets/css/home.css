@@ -140,7 +140,7 @@ header {
     color: #FFF;
     background-color: rgba(255, 255, 255, 0);
 }
-.butonsChegada:hover {
+#areaButons button:hover {
     transform: scale(1.2);
     border-color: #f0e7df;
     font-weight: 500;
@@ -567,6 +567,9 @@ footer button {
     }
     #areaInformacao {
         margin: auto;
+    }
+    #btnsLocalizacao button:hover, footer button:hover {
+        transform: none;
     }
     #btnsLocalizacao {
         justify-content: space-around;
