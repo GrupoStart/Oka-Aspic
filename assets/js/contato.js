@@ -20,7 +20,7 @@ $(document).ready(function() {
     var mensagem = form_contact.mensagem.value;
   
     if (nome != "" &&  email != "" && telefone != "" && assunto != "" && mensagem != "" ){
-      alert("Sua mensagem foi enviada ao Restaurante Start!");
+      alert("Sua mensagem foi enviada ao Restaurante Oka-Aspic!");
       form_reserv.data.focus();
       return false;
     } else{
