@@ -1,18 +1,86 @@
-p {
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 50px;
-    margin: auto;
-    color: blue;
-}
+@import url(https://fonts.googleapis.com/css2?family=Ephesis&display=swap%27);
 
 body {
+    background-image: url(img/background-contatos.jpg);
     background-repeat: no-repeat;
-    background-image: url(../img/contatos/background-contatos.jpg);
-    background-attachment:scroll;
-    background-position: center;
-    height: 1000px;
-    margin-bottom: -500px;
-
+    background-size: cover;
+    color: white;
+}
+form{
+    font-style: italic;
+    font-size: 20px;
+}
+h3{
+    font-size: 40px;
+    margin-bottom: 4%;
+    font-family: 'Ephesis';
+}
+footer{
+    margin-top: 12%;
+    text-align: center;
+    background-color: rgba(234, 0, 0, 0.6);
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+#menu ul {
+    padding:8px;
+    border-radius: 16px;
+    margin-top: 2%;
+    font-family: 'Ephesis';
+    font-weight: bold;
+    margin-left: 15%;    
+}
+.lateral{
+    font-size: 18px;
+}
+.centralizando{
+    font-size: 30px;
+}
+.centro{
+    font-size: 50px;
+}
+#menu ul li { 
+    display: inline; 
+}
+#menu ul li a {
+    padding: 1.2% 3.6%;
+    display: inline;
+    color: #333;
+    text-decoration: none;
+    color: rgb(234, 0, 0);
+}
+.branco{
+    width: 26%;
+    height: 30%;
+    border-radius: 8px;
+    border: 1px solid rgba(223, 223, 223, 0);
+    height: 23px;
+    background-color: rgba(223, 223, 223, 0.6);
+}
+#mensagem{
+    width: 26%;
+    height: 30%;
+    border-radius: 8px;
+    border: 1px solid rgba(223, 223, 223, 0);
+    background-color: rgba(223, 223, 223, 0.6);
+}
+#container{
+    margin-left: 42%;
+    margin-top: 3%;
+}
+#botao{
+    border-radius: 10px;
+    border: 1px solid rgba(223, 223, 223, 0);
+    background-color: rgba(223, 223, 223, 0.6);
+    width: 6%;
+    height: 25px;
+    margin-left: 20%;
+}
+#menu ul li a:hover {
+    border-bottom: white solid 2px;
+    background-color: rgba(223, 223, 223, 0.2);
+    border-radius: 30px;
+    
 }
