@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Ephesis&display=swap%27);
 
 body {
-    background-image: url(img/background-contatos.jpg);
+    background-image: url(..img/contatos/background-contatos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
