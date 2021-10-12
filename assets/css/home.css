@@ -76,7 +76,7 @@ header {
 #navegacao.ativo{
     display: flex;
     flex-direction: column;
-    height: calc(45vh - 70px);
+    height: calc(50vh - 70px);
     visibility: visible;
     padding-top: 4%;
 }
@@ -593,10 +593,6 @@ footer button {
     }
     #navegacao li a {
         font-size: 1.5em;
-    }
-    #navegacao.ativo {
-        height: calc(40vh - 70px);
-        padding-top: 2%;
     } 
     /* Butons Chegada */
     #areaButons button {
@@ -631,10 +627,6 @@ footer button {
     #navegacao {
         top: 50px;
     }
-    #navegacao.ativo {
-        height: calc(40vh - 50px);
-        padding-top: 15%;
-    } 
     #textChegada {
         width: 100%;
         margin: 0;

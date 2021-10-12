@@ -71,7 +71,7 @@ header {
 #navegacao.ativo{
     display: flex;
     flex-direction: column;
-    height: calc(50vh - 70px);
+    height: calc(60vh - 70px);
     visibility: visible;
     padding-top: 4%;
 }
