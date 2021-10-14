@@ -24,6 +24,9 @@ footer{
     font-weight: bold;
     font-size: 14px;
 }
+input {
+outline: none;
+}
 #menu ul {
     padding:8px;
     border-radius: 16px;
